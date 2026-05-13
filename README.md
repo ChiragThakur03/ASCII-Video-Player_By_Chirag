@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg)
 ![NumPy](https://img.shields.io/badge/NumPy-1.20+-blue.svg)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS%20%7C%20Android-blue.svg)
 
 **ASCII Video Player v4** adalah pemutar video berbasis teks (Command-Line Interface) yang merender setiap *frame* video menjadi seni ASCII yang memukau langsung di dalam terminal Anda. Versi Ultimate ini mendukung *rendering* hitam-putih super cepat maupun *full-color* dengan performa pemrosesan *thread* terpisah!
 
