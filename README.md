@@ -1,65 +1,67 @@
-# 🎬 ASCII Player Video Creator — V5 Official
+# 🎬 ASCII Video Player
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg)
-![NumPy](https://img.shields.io/badge/NumPy-1.20+-blue.svg)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS%20%7C%20Android-blue.svg)
-![Pillow](https://img.shields.io/badge/Pillow-Latest-orange.svg)
-![Status](https://img.shields.io/badge/Version-Official%20V5-brightgreen.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+A powerful, cross-platform Python application that transforms your videos into stunning ASCII art animations. Watch videos directly in your terminal or export them as stylized MP4 files.
 
+![ASCII Preview Placeholder](https://via.placeholder.com/800x400?text=ASCII+Video+Player+Preview)
 
-V5 Official Release: Multi-language support, MP4 export, and improved interactive workflow
+## ✨ Features
 
-A professional text-based (CLI) video creation suite that allows you to play and **export** any video into high-quality ASCII art. This version is the official V5 release, featuring a complete interactive workflow and multi-language support.
+- **Live Terminal Playback:** Experience your favorite videos as high-speed ASCII animations in your command line.
+- **24-bit True Color:** Uses ANSI escape codes to render characters with the original video's colors.
+- **MP4 Export:** Convert and save your ASCII animations as high-quality MP4 video files.
+- **Customizable Output:** 
+  - Adjust output width (Manual or Auto-fit to terminal).
+  - Frame skipping for smoother performance on older hardware.
+  - Custom background colors for exported videos (Black, White, Blue, or Hex).
+- **Multilingual UI:** Clean, English-focused interface with a professional startup logo.
 
----
+## 🚀 Installation
 
-## ✨ Key Features
-
-- **📽️ MP4 Export Engine**: Convert any video into an ASCII-styled MP4. Choose between saving only the video or keeping every individual PNG frame.
-- **🌍 Multi-Language Support**: Interactive language selector on startup (English, Spanish, French, Portuguese, German, and Indonesian).
-- **🖥️ Proportional Auto-Fit**: Real-time scaling to fit your terminal window (both width and height) while maintaining aspect ratio.
-- **🎨 Custom Backgrounds**: Choose the background color for your exports (Black, White, Blue, or any Custom Hex color).
-- **🌈 24-bit ANSI Color**: High-fidelity character coloring for a premium visual experience.
-- **⚡ Performance Optimized**: Background decoding and vectorized processing for smooth playback.
-- **🖋️ High-Density Set**: Expanded character set for deep shading and intricate details.
-
----
-
-## 🛠️ Installation
-
-Ensure you have the required dependencies:
-
+### 1. Clone the Repository
 ```bash
-pip install opencv-python numpy Pillow
+git clone https://github.com/ChiragThakur03/ASCII-Video-Player_By_Chirag.git
+cd ASCII-Video-Player
 ```
 
----
-
-## 🚀 How to Use
-
-Simply run the script and follow the guided interactive process:
-
+### 2. Install Dependencies
+Make sure you have Python 3.7+ installed. Then, install the required libraries:
 ```bash
-python ASCII_v5_official.py
+pip install -r requirements.txt
 ```
 
-### Flow:
-1. **Logo & Language**: Choose your preferred language.
-2. **Configuration**: Set video path, color mode, width, and frame skipping.
-3. **Preview**: Watch the ASCII version in your terminal.
-4. **Export**: After previewing, choose if you want to export the result to an MP4 video file.
-5. **Cycle**: Process another video immediately after finishing!
+## 🛠️ Usage
 
----
+### Quick Start
+To play a video in your terminal, simply run:
+```bash
+python ASCII_V1.py your_video.mp4
+```
 
-## 💡 Credits
-- **Original Core**: [stepanussaruran](https://github.com/stepanussaruran)
-- **V5 Enhancements & Export Logic**: Nicolas Romero ([coralgamer](https://github.com/nicolas-romero))
+## 🔄 User Flow
+
+The application is designed to be intuitive and guided. Here is the typical flow:
+
+1.  **Launch:** You run the script from the command line, providing your video file as an argument.
+2.  **Branding:** A professional "ASCII PLAYER" logo appears for 2 seconds while the engine initializes.
+3.  **Setup Phase:** The script prompts you for three configuration settings:
+    *   **Output Width:** Press `Enter` to automatically scale the video to fit your terminal window, or specify a width in characters.
+    *   **Frame Skipping:** Set a number (e.g., `2`) to skip frames for smoother playback on slower terminals.
+    *   **Looping:** Choose if the preview should automatically restart when finished.
+4.  **Live Preview:** The video plays in your terminal using colored ASCII characters.
+    *   You can stop the preview at any time by pressing **Ctrl+C**.
+    *   A progress bar at the bottom keeps you updated on the playback status.
+5.  **Export Phase:** Once the preview ends, you are asked if you want to export the animation as an MP4 file.
+    *   **Folder Selection:** Specify where to save the output.
+    *   **Background Style:** Choose a background color (Black, White, Blue, or Custom Hex).
+    *   **Rendering:** The script draws the ASCII art onto high-resolution images and compiles them into a video.
+6.  **Finalization:** The path to your new `.mp4` file is displayed, and you can choose to process another video or exit.
+
+## 📦 Requirements
+- `opencv-python`: Video processing and I/O.
+- `numpy`: High-speed color calculations.
+- `Pillow`: Image rendering for export.
 
 ## ⚖️ License
-Distributed under the **MIT License**. See `LICENSE` for more information.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
----
-*Language Versions: [Español](README_ES.md) | [Français](README_FR.md) | [Português](README_PT.md) | [Deutsch](README_DE.md) | [Indonesian](README_ID.md)*
+Copyright (c) 2026 **Chirag Bahadur**
